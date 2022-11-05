@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+html {
+  min-height: 100vh;
+}
+body {
+    background-image:    url(https://images.hdqwalls.com/wallpapers/dark-night-mountains-4k-e3.jpg);
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;              /* optional, center the image */
+    
+
+  }
+  img[alt*="000webhost"],
+img[alt*="000webhost"][style],
+img[src*="000webhost"],
+img[src*="000webhost"][style],
+body > div:nth-last-of-type(1)[style]{
+	opacity: 0 !important;
+	pointer-events:none !important;
+	width: 0px !important;
+	height: 0px !important;
+	visibility:hidden !important;
+	display:none !important;
+}
+  
+  .box{
+    width: 450px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 4%;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.411));
+    padding: 40px;
+    text-align: center;
+    backdrop-filter: blur(0px);
+    margin: auto;
+    margin-top: 3%;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    color: white;
+    font-family: 'quicksand', sans-serif;
+    -webkit-font-smoothing: subpixel-antialiased;
+    transition: all ease-in-out 550ms;
+  }
+  .box:hover{
+    filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.822));
+    backdrop-filter: blur(3px);
+    transform: scale(1.05, 1.05);
+    will-change: transform;
+    backface-visibility: hidden;
+    -webkit-font-smoothing: subpixel-antialiased;
+  }
+  .box-img{
+    border-radius: 50%;
+    filter: drop-shadow(0 0 10px rgba(93, 93, 99, 0.24));
+    width: 200px;
+    height: 200px;
+    transition: all ease-in-out 300ms;
+  }
+  .box-img:hover{
+    border-radius: 50%;
+    filter: drop-shadow(0 0 20px rgba(98, 98, 105, 0.37));
+  }
+  .box h1{
+    font-size: 50px;
+    letter-spacing: 1px;
+    font-weight: 100;
+  }
+  .box h5{
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-weight: 100;
+  }
+  .box p{
+    text-align: justify;
+  }
+  ul{
+    margin: 0;
+    padding: 0;
+  }
+  .box li{
+    display: inline-block;
+    margin: 6px;
+    list-style: none;
+  }
+  .box li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 50px;
+    transition: all ease-in-out 300ms;
+  }
+  .box li a:hover{
+    color: #8d8d8d;
+    font-size: 43px;
+    height: 50px;
+    width: 50px;
+    
+  }
+  .box h1 {
+    text-shadow: 0px 0px 7px #1f1f1f;
+  }
+  .box h5 {
+    text-shadow: 0px 0px 7px #1f1f1f;
+  }
+  .box p {
+    text-shadow: 0px 0px 7px #1f1f1f;
+  }
+  @keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.5, 1.5);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+  #player {
+    transform: scale(0.95, 0.95);
+    transition: all ease-in-out 550ms;
+  }
+  #player:hover {
+      will-change: transform;
+      transform: scale(1, 1);
+      -webkit-font-smoothing: subpixel-antialiased;
+      
+  }
+  
